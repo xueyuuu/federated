@@ -7,7 +7,10 @@
 <meta itemprop="property" content="source"/>
 <meta itemprop="property" content="type_signature"/>
 <meta itemprop="property" content="__init__"/>
+<meta itemprop="property" content="compact_representation"/>
+<meta itemprop="property" content="formatted_representation"/>
 <meta itemprop="property" content="from_proto"/>
+<meta itemprop="property" content="structural_representation"/>
 </div>
 
 # tff.framework.Selection
@@ -75,6 +78,22 @@ Returns the TFF type of this object (an instance of
 
 ## Methods
 
+<h3 id="compact_representation"><code>compact_representation</code></h3>
+
+```python
+compact_representation()
+```
+
+Returns the compact string representation of this building block.
+
+<h3 id="formatted_representation"><code>formatted_representation</code></h3>
+
+```python
+formatted_representation()
+```
+
+Returns the formatted string representation of this building block.
+
 <h3 id="from_proto"><code>from_proto</code></h3>
 
 ```python
@@ -102,3 +121,11 @@ contains the deserialized logic from in 'computation_proto'.
     computation for which deserialization has not been implemented yet.
 *   <b>`ValueError`</b>: if deserialization failed due to the argument being
     invalid.
+
+<h3 id="structural_representation"><code>structural_representation</code></h3>
+
+```python
+structural_representation()
+```
+
+Returns the structural string representation of this building block.
